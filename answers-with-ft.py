@@ -154,3 +154,5 @@ if __name__ == "__main__":
         max_tokens=args.max_tokens,
     )
     print(f"Answer:{response}")
+
+    # create a readme with markdown for openai resources notbooks repository
