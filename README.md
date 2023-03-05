@@ -8,14 +8,8 @@ To get started with the notebooks, you'll need to have Jupyter installed on your
 bash
 Copy code
 pip install jupyter
-Once you have Jupyter installed, you can clone the repository and start the Jupyter notebook server:
+Once you have Jupyter installed, you can clone the repository and start the Jupyter notebook server.
 
-bash
-Copy code
-git clone https://github.com/openai/notebooks.git
-cd notebooks
-jupyter notebook
-This will start the Jupyter notebook server and open the notebook interface in your web browser. From there, you can browse the collection of notebooks and start running them.
 
 # Notebooks
 The notebooks are organized by topic and can be found in the notebooks directory. Each notebook is self-contained and includes detailed instructions and explanations.
