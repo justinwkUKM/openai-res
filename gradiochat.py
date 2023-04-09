@@ -27,6 +27,9 @@ def predict(input, role="user"):
     print("num_tokens", num_tokens, "\n")
     
     #if token size is greater than 4K then do something smart. pop some messages from history or create a summary of message history and pass it.
+    if num_tokens > 4000:
+        del message_history[:2]
+    
     completion = openai.ChatCompletion.create(
     model=turbo3dot5,
     messages=message_history, temperature=0.2,
@@ -41,7 +44,10 @@ def predict(input, role="user"):
     response = [(message_history[i]["content"], message_history[i+1]["content"]) for i in range(2, len(message_history)-1, 2)]
     print("response",response, "\n")
 
+
+
     return response
+
 
 
 # setup gradio chatbot ui
