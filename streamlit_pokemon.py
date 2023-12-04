@@ -5,6 +5,7 @@ from openai import OpenAI
 
 
 client = OpenAI()
+
 def get_pokemon_info(pokemon_name):
     url = f"https://pokeapi.co/api/v2/pokemon/{pokemon_name}"
     response = requests.get(url)
@@ -21,7 +22,7 @@ def parse_abilities(data):
         abilities.append(ability_name)
     return abilities
 
-st.title('Pokémon Fan App')
+st.title('Pokémon Fan App!')
 
 st.write("Enter the name of your favorite Pokémon:")
 
