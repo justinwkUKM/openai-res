@@ -22,7 +22,7 @@ def parse_abilities(data):
         abilities.append(ability_name)
     return abilities
 
-st.title('Pokémon Fan App!')
+st.title('Tooba`s Pokémon Fan App!')
 
 st.write("Enter the name of your favorite Pokémon:")
 
